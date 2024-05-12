@@ -37,5 +37,6 @@ pip install --quiet ipykernel
 # Customize these lines as necessary to install the required packages
 #conda install --yes numpy
 pip install -r "$PROJECT_DIR/requirements.txt" --user
+python -m ipykernel install --user --name "$KERNEL_NAME" --display-name "$KERNEL_NAME"
 
 EOF
