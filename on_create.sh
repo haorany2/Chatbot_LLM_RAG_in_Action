@@ -23,7 +23,6 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-4.6.14-Linux-x86_64.sh -O "$
 bash "$WORKING_DIR/miniconda.sh" -b -u -p "$WORKING_DIR/miniconda" 
 rm -rf "$WORKING_DIR/miniconda.sh"
 
-
 # Create a custom conda environment
 source "$WORKING_DIR/miniconda/bin/activate"
 KERNEL_NAME="custom_python"
@@ -36,7 +35,7 @@ pip install --quiet ipykernel
 
 # Customize these lines as necessary to install the required packages
 #conda install --yes numpy
-pip install -r "$PROJECT_DIR/requirements.txt" --user
+pip install -r "$PROJECT_DIR/requirements.txt"
 python -m ipykernel install --user --name "$KERNEL_NAME" --display-name "$KERNEL_NAME"
 
 EOF
