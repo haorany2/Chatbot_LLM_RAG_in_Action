@@ -35,7 +35,11 @@ pip install --quiet ipykernel
 
 # Customize these lines as necessary to install the required packages
 #conda install --yes numpy
-pip install -r "$PROJECT_DIR/requirements.txt"
+pip install -r "$PROJECT_DIR/requirements2.txt"
+conda install -c conda-forge poppler
+conda install -c conda-forge tesseract
+
+
 python -m ipykernel install --user --name "$KERNEL_NAME" --display-name "$KERNEL_NAME"
 
 EOF
