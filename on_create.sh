@@ -37,7 +37,7 @@ pip install --quiet ipykernel
 #conda install --yes numpy
 pip install -r "$PROJECT_DIR/requirements2.txt"
 #conda install -y -c conda-forge poppler
-#conda install -y -c conda-forge tesseract
+conda install -yes -c conda-forge tesseract
 
 
 python -m ipykernel install --user --name "$KERNEL_NAME" --display-name "$KERNEL_NAME"
